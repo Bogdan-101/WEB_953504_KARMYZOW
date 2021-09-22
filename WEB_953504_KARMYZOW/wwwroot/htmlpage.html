@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Web application</title>
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="lib/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="navbar navbar-expand-md navbar-dark bg-dark header">
+        <a class="navbar-brand badge" href="/htmlpage.html">95350061</a>
+        <nav class="navbar-nav">
+            <a class="nav-item nav-link active" href="/htmlpage.html">Лб 1</a>
+            <a class="nav-item nav-link" href="#">Каталог</a>
+            <a class="nav-item nav-link" href="#">Администрирование</a>
+        </nav>
+        <a href="#" class="navbar-text ml-auto">
+            00,0 руб <i class="fas fa-shopping-cart nav-color"></i> (0)
+        </a>
+        <div class="dropdown ml-4 nav-color">
+            <div class="dropdown-toggle"
+                 id="dropdownMenuButton"
+                 data-toggle="dropdown"
+                 aria-haspopup="true"
+                 aria-expanded="false">
+                <img src="assets/images/avatar.jpg" width="30" alt="User" class="rounded" />
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-item-text">
+                    <img src="assets/images/avatar.jpg"
+                         width="50"
+                         alt="User"
+                         class="rounded" />
+                    big_bogdan@rambler.ru
+                </div>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Мои товары</a>
+                <a class="dropdown-item" href="#">Log off</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="test">Лабораторная работа 1</h1>
+        <h3>Список</h3>
+        <ol type="A">
+            <li>Элемент 1 списка</li>
+            <li>Элемент 2 списка</li>
+        </ol>
+        <hr />
+        <h3>Форма</h3>
+        <form method="post">
+            <div class="form__content">
+                <div class="checkboxes">
+                    <label>
+                        <input type="checkbox" name="checkbox1" />
+                        Чек-бокс 1
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox2" />
+                        Чек-бокс 2
+                    </label>
+                </div>
+                <div class="radios">
+                    <label>
+                        <input type="radio" name="radio" value="radio 1" />
+                        Радио 1
+                    </label>
+                    <label>
+                        <input type="radio" name="radio" value="radio 2" />
+                        Радио 2
+                    </label>
+                    <label>
+                        <input type="radio" name="radio" value="radio 3" />
+                        Радио 3
+                    </label>
+                </div>
+                <label>
+                    <span class="left">
+                        Логин:
+                    </span>
+                    <input type="text" class="form-control" name="login" placeholder="Введите имя" />
+                </label>
+                <label>
+                    <span class="left">
+                        Пароль:
+                    </span>
+                    <input type="password" class="form-control" name="password" placeholder="Введите пароль" />
+                </label>
+            </div>
+                <input type="submit" value="Отправить" class="btn btn-primary" />
+            </form>
+    </main>
+    <footer class="navbar navbar-dark navbar-expand-md bg-dark">
+        <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="http://www.facebook.com">
+                <i class="fab fa-facebook-f fa-2x"></i>
+            </a>
+            <a class="nav-item nav-link" href="http://www.vk.com">
+                <i class="fab fa-vk fa-2x"></i>
+            </a>
+            <a class="nav-item nav-link" href="http://www.twitter.com">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

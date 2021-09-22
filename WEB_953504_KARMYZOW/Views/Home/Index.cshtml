@@ -1,8 +1,59 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Title второй лабы";
+    ViewData["SampleText"] = "Лабораторная работа №2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1 class="test">@ViewData["SampleText"]</h1>
+<h3>Список</h3>
+<ol type="A">
+    @for (var i = 1; i <=2 ; i++)
+    {
+        <li>Элемент @i списка</li>
+    }
+</ol>
+<hr />
+<h3>Форма</h3>
+<form method="get">
+    <div class="form__content">
+        <div class="checkboxes">
+            <label>
+                <input type="checkbox" name="checkbox1" />
+                Чек-бокс 1
+            </label>
+            <label>
+                <input type="checkbox" name="checkbox2" />
+                Чек-бокс 2
+            </label>
+        </div>
+        <div class="radios">
+            <label>
+                <input type="radio" name="radio" value="radio 1" />
+                Радио 1
+            </label>
+            <label>
+                <input type="radio" name="radio" value="radio 2" />
+                Радио 2
+            </label>
+            <label>
+                <input type="radio" name="radio" value="radio 3" />
+                Радио 3
+            </label>
+        </div>
+        <select asp-items="@ViewData["Lst"] as SelectList" name="select"></select>
+        <label>
+            <span class="left">
+                Логин:
+            </span>
+            <input type="text" class="form-control" name="login" placeholder="Введите имя" />
+        </label>
+        <label>
+            <span class="left">
+                Пароль:
+            </span>
+            <input type="password" class="form-control" name="password" placeholder="Введите пароль" />
+        </label>
+    </div>
+    <input type="submit" value="Отправить" class="btn btn-primary" />
+</form>
+
