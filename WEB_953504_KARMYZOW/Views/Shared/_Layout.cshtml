@@ -17,12 +17,9 @@
         @await Component.InvokeAsync("Menu") 
         </div> 
         <!-- меню сайта - конец -->
-        @await Component.InvokeAsync("Cart")
-        <div class="dropdown ml-4 nav-color">
-            <!-- Информация пользователя -->                
-            <partial name="_UserPartial" /> 
-            <!-- Информация пользователя - конец -->
-        </div>
+        <!-- Информация пользователя -->                
+        <partial name="_UserPartial" /> 
+        <!-- Информация пользователя - конец -->
     </header>
     <main class="main">
         @RenderBody()
