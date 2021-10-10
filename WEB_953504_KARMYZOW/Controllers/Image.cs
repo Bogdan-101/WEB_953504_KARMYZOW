@@ -1,7 +1,7 @@
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 using WEB_953504_KARMYZOW.Entities;
 
 namespace WEB_953504_KARMYZOW.Controllers
@@ -28,7 +28,7 @@ namespace WEB_953504_KARMYZOW.Controllers
                 return File(user.AvatarImage, "image/...");
             else
             {
-                var avatarPath = "/Images/anonymous.png";
+                var avatarPath = "/images/anonymous.jpg";
                 return File(_env
                     .WebRootFileProvider
                     .GetFileInfo(avatarPath)
