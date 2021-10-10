@@ -1,0 +1,11 @@
+.card__image {
+  height: 160px;
+}
+
+.card__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
