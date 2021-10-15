@@ -21,6 +21,10 @@ namespace WEB_953504_KARMYZOW
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                }).ConfigureLogging(lp =>
+                {
+                    lp.AddFilter("Microsoft", LogLevel.Error);
+                    lp.AddFilter("Microsoft.Hosting.Lifetime", LogLevel.None);
                 });
     }
 }
